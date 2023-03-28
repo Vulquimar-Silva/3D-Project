@@ -22,6 +22,10 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import electron from "./tech/electron.png";
 import reactnative from "./tech/reactnative.png";
+import kubernetes from "./tech/kubernetes.png";
+import aws from "./tech/aws.png";
+import mysql from "./tech/mysql.png";
+import postgresql from "./tech/postgresql.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -31,6 +35,12 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import itsocial from "./itsocial.png";
+import nubank from "./nubank.png";
+import spiderman from "./spiderman.png";
+import vulksfy from "./vulksfy.png";
+import vulksAutomation from "./vulksAutomation.png";
+
 
 export {
   logo,
@@ -62,5 +72,14 @@ export {
   jobit,
   tripguide,
   electron,
-  reactnative
+  reactnative,
+  kubernetes,
+  aws,
+  mysql,
+  postgresql,
+  itsocial,
+  nubank,
+  spiderman,
+  vulksfy,
+  vulksAutomation
 };

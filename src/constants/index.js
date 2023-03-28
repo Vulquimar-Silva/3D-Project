@@ -24,7 +24,14 @@ import {
   tripguide,
   threejs,
   electron,
-  reactnative
+  reactnative,
+  kubernetes,
+  aws,
+  itsocial,
+  nubank,
+  spiderman,
+  vulksfy,
+  vulksAutomation
 } from "../assets";
 
 export const navLinks = [
@@ -83,10 +90,6 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -99,10 +102,6 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
@@ -111,9 +110,21 @@ const technologies = [
     icon: figma,
   },
   {
+    name: "electron",
+    icon: electron,
+  },
+  {
     name: "docker",
     icon: docker,
   },
+  {
+    name: "kubernetes",
+    icon: kubernetes,
+  },
+  {
+    name: "aws",
+    icon: aws,
+  }
 ];
 
 const experiences = [
@@ -125,7 +136,7 @@ const experiences = [
     date: "Janeiro 2023 - até o momento",
     points: [
       "Um clone do instagram utilizando Graphql, JWT, Formik, Yup, Sass e Semantic UI, ainda está em desenvolvimento.",
-      "Esse portfólio aqui, nele utilizei a biblioteca Three.js, Motion, Tailwind e Emailjs.",
+      "Esse portfólio, nele utilizei a biblioteca Three.js, Motion, Tailwind e Emailjs.",
       "Um ecomerce voltado para pets, ainda está em desenvolvimento.",
       "Um chat em real time utilizando Socket.io, ainda está em desenvolvimento.",
     ],
@@ -174,7 +185,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "Eu pensei que era impossível fazer um site tão bonito quanto o nosso produto, mas o Vulks provou que eu estava errado.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -182,7 +193,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "Nunca conheci um desenvolvedor web que realmente se preocupasse com o sucesso de seus clientes como Vulks.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -190,7 +201,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "Depois que o Vulks otimizou nosso site, nosso tráfego aumentou 50%. Não podemos agradecê-los o suficiente!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -200,67 +211,121 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "IT.Social",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Uma rede social somente para quem é da área de TI, seja empresas ou pessoas.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "mysql",
+        color: "orange-text-gradient",
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "jwt",
+        color: "green-text-gradient",
+      },
+    ],
+    image: itsocial,
+    source_code_link: "https://github.com/Vulquimar-Silva/client-itsocial",
+  },
+  {
+    name: "Spiderman",
+    description:
+      "Esse projeto foi construido no curso Frontpush que é focado 100% em Front-end.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "motion",
+        color: "green-text-gradient",
+      },
+    ],
+    image: spiderman,
+    source_code_link: "https://github.com/Vulquimar-Silva/land-spiderman",
+  },
+  {
+    name: "Vulksfy",
+    description:
+      "Esse projeto é inspirado 100% no spotify, foi construido no curso do Agustin Galdon.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "electronjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sass",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: vulksfy,
+    source_code_link: "https://github.com/Vulquimar-Silva/Spotify-Client",
   },
   {
-    name: "Trip Guide",
+    name: "Vulks Automation",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Projeto desenvolvido com foco na coleta de dados e teste de conexão.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "electronjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "powershell",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: vulksAutomation,
+    source_code_link: "https://github.com/Vulquimar-Silva/vulks-automation",
+  },
+  {
+    name: "Nubank",
+    description:
+      "Esse projeto é um clone melhorado do Nubank, foi construido no curso Front push.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "motion",
+        color: "green-text-gradient",
+      },
+    ],
+    image: nubank,
+    source_code_link: "https://github.com/Vulquimar-Silva/clone-nubank",
   },
 ];
 
