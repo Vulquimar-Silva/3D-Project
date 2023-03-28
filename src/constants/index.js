@@ -23,39 +23,41 @@ import {
   jobit,
   tripguide,
   threejs,
+  electron,
+  reactnative
 } from "../assets";
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: "Sobre",
+    title: "Sobre",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "Projetos",
+    title: "Projetos",
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: "Contato",
+    title: "Contato",
   },
 ];
 
 const services = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: reactjs,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Desktop Developer",
+    icon: electron,
   },
   {
     title: "Backend Developer",
-    icon: backend,
+    icon: nodejs,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Mobile Developer",
+    icon: reactnative,
   },
 ];
 
@@ -116,55 +118,55 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Projetos React.js",
+    company_name: "Front-end",
+    icon: reactjs,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Janeiro 2023 - até o momento",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Um clone do instagram utilizando Graphql, JWT, Formik, Yup, Sass e Semantic UI, ainda está em desenvolvimento.",
+      "Esse portfólio aqui, nele utilizei a biblioteca Three.js, Motion, Tailwind e Emailjs.",
+      "Um ecomerce voltado para pets, ainda está em desenvolvimento.",
+      "Um chat em real time utilizando Socket.io, ainda está em desenvolvimento.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Projetos Node.js",
+    company_name: "Back-end",
+    icon: nodejs,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Janeiro 2023 - até o momento",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Desenvolvi uma API para rede social com o framework Express, Mysql, JWT.",
+      "Desenvolvi um CRUD simples com Express, Postgres, Docker e Kubernetes.",
+      "Estou desenvolvendo uma API utilizando GraphQL, JWT, MongoDB e AWS.",
+      "Estou desenvolvendo um app Serverless com TypeScript utilizando serviços e frameworks da AWS.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Projetos Electron.js",
+    company_name: "Desktop",
+    icon: electron,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Fevereiro 2020 - Dezembro 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Desenvolvi um Spotify clone, nele utilizei React.js, Sass e Firebase.",
+      "Desenvolvi um app que coleta dados da maquina e efetua testes completo de conexão, nesse projeto utilizei Next.js, Tailwind, Node.js e Powershell.",
+      "Desenvolvi um app para auxiliar o usuário antes de logar no sistema operacional, esse app coleta dados da máquina, efetua instalações, verifica conexão e insere a máquina no domínio, tudo isso na tela de bloqueio do windows.",
+      "Desenvolvi um chat bot integrado com o framework do telegram, esse app efetua instalação de aplicações client pelo chat.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Projetos React Native",
+    company_name: "Mobile",
+    icon: typescript,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Janeiro 2022 - até o momento",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Estou desenvolvendo um app bem parecido com o whatsapp, nele estou utilizando socket.io, Formik, Yup, JWT.",
+      "Desenvolvi o app Smart Money, esse app é voltado para controle financeiro. Nele contem gráficos, categorias, últimos lançamentos",
+      "Desenvolvi o app Ignite Gym, esse app auxilia a pessoa na hora dos treinamentos na academia.",
+      "Desenvolvi o app DevPost, esse app é uma rede social bem simples.",
     ],
   },
 ];

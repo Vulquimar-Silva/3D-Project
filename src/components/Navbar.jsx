@@ -21,10 +21,9 @@ const Navbar = () => {
             setActive("")
             window.scrollTo(0, 0)
           }}>
-          <img src={vulks} alt="logo da aplicação" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18] font-bold cursor-pointer">
+          <img src={vulks} alt="logo da aplicação" className="w-10 h-10 object-contain" />
+          <p className="text-white text-[18] font-bold cursor-pointer flex">
             Vulquimar Silva
-            <span className="sm:block hidden">| Full stack Javascript</span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">

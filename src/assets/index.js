@@ -20,6 +20,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import electron from "./tech/electron.png";
+import reactnative from "./tech/reactnative.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -59,4 +61,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  electron,
+  reactnative
 };
