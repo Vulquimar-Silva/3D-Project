@@ -1,16 +1,13 @@
-import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
+import React from "react";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 
-import "react-vertical-timeline-component/style.min.css";
-
-import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
+
+import "react-vertical-timeline-component/style.min.css";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -64,7 +61,7 @@ const Experience = () => {
           O que fiz até agora
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Meus projetos
+        Experiência de trabalho.
         </h2>
       </motion.div>
 

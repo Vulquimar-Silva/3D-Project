@@ -13,7 +13,7 @@ const Hero = () => {
         </div>
 
         <div className='w-full'>
-          <h1 className={`${styles.heroHeadText} opacity-80`}>
+          <h1 className={`${styles.heroHeadText} opacity-75`}>
             Hi, viajantes &nbsp;
           </h1>
           <h1 className='text-[#915eff] font-black lg:text-[80px] w-full sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-1 opacity-85'>bem vindos</h1>

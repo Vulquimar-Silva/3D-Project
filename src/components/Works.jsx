@@ -1,11 +1,11 @@
+import { motion } from "framer-motion";
 import React from "react";
 import Tilt from "react-tilt";
-import { motion } from "framer-motion";
 
-import { styles } from "../styles";
 import { github } from "../assets";
-import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -81,7 +81,7 @@ const Works = () => {
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
           Cada projeto é brevemente descrito com
-          links para os seus repositórios, alguns repositorios estão privado.
+          links para os seus repositórios, alguns repositorios estão privados.
           Isso reflete a minha capacidade de resolver problemas e trabalhar com diferentes tecnologias,
           e gerenciar projetos de forma eficaz.
         </motion.p>

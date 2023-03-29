@@ -1,38 +1,4 @@
-import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
-  electron,
-  reactnative,
-  kubernetes,
-  aws,
-  itsocial,
-  nubank,
-  spiderman,
-  vulksfy,
-  vulksAutomation
-} from "../assets";
+import { aws, backend, carrent, creator, css, docker, electron, figma, git, html, itsocial, javascript, jobit, kubernetes, meta, mobile, mongodb, nodejs, nubank, reactjs, reactnative, redux, shopify, spiderman, starbucks, tailwind, tesla, threejs, tripguide, typescript, vulksAutomation, vulksfy, web } from "../assets";
 
 export const navLinks = [
   {
@@ -129,55 +95,56 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Projetos React.js",
-    company_name: "Front-end",
+    title: "Desenvolvedor Full Stack JS",
+    company_name: "Algar Tech",
     icon: reactjs,
     iconBg: "#383E56",
-    date: "Janeiro 2023 - até o momento",
+    date: "Fevereiro 2020 - Janeiro 2023",
     points: [
-      "Um clone do instagram utilizando Graphql, JWT, Formik, Yup, Sass e Semantic UI, ainda está em desenvolvimento.",
-      "Esse portfólio, nele utilizei a biblioteca Three.js, Motion, Tailwind e Emailjs.",
-      "Um ecomerce voltado para pets, ainda está em desenvolvimento.",
-      "Um chat em real time utilizando Socket.io, ainda está em desenvolvimento.",
+      "Desenvolvimento de aplicações WEB com Angular 9, ReactJS e NodeJS.",
+      "Desenvolvimento de aplicações desktop com ElectronJS, NextJS, Tailwind, NodeJS e AWS.",
+      "Deploy do client em ambiente operacional com Powershell.",
+      "Desenvolvimento de scripts e chat bot para instalações remota no service desk.",
     ],
   },
   {
-    title: "Projetos Node.js",
-    company_name: "Back-end",
-    icon: nodejs,
-    iconBg: "#E6DEDD",
-    date: "Janeiro 2023 - até o momento",
-    points: [
-      "Desenvolvi uma API para rede social com o framework Express, Mysql, JWT.",
-      "Desenvolvi um CRUD simples com Express, Postgres, Docker e Kubernetes.",
-      "Estou desenvolvendo uma API utilizando GraphQL, JWT, MongoDB e AWS.",
-      "Estou desenvolvendo um app Serverless com TypeScript utilizando serviços e frameworks da AWS.",
-    ],
-  },
-  {
-    title: "Projetos Electron.js",
-    company_name: "Desktop",
-    icon: electron,
-    iconBg: "#383E56",
-    date: "Fevereiro 2020 - Dezembro 2021",
-    points: [
-      "Desenvolvi um Spotify clone, nele utilizei React.js, Sass e Firebase.",
-      "Desenvolvi um app que coleta dados da maquina e efetua testes completo de conexão, nesse projeto utilizei Next.js, Tailwind, Node.js e Powershell.",
-      "Desenvolvi um app para auxiliar o usuário antes de logar no sistema operacional, esse app coleta dados da máquina, efetua instalações, verifica conexão e insere a máquina no domínio, tudo isso na tela de bloqueio do windows.",
-      "Desenvolvi um chat bot integrado com o framework do telegram, esse app efetua instalação de aplicações client pelo chat.",
-    ],
-  },
-  {
-    title: "Projetos React Native",
-    company_name: "Mobile",
+    title: "Freelancer",
+    company_name: "Autônomo",
     icon: typescript,
     iconBg: "#E6DEDD",
-    date: "Janeiro 2022 - até o momento",
+    date: "Janeiro 2019 - até o momento",
     points: [
-      "Estou desenvolvendo um app bem parecido com o whatsapp, nele estou utilizando socket.io, Formik, Yup, JWT.",
-      "Desenvolvi o app Smart Money, esse app é voltado para controle financeiro. Nele contem gráficos, categorias, últimos lançamentos",
-      "Desenvolvi o app Ignite Gym, esse app auxilia a pessoa na hora dos treinamentos na academia.",
-      "Desenvolvi o app DevPost, esse app é uma rede social bem simples.",
+      "Faço aplicações WEB utilizando ReactJS/NextJS ou Angular.",
+      "Faço APIs com NodeJS utilizando os padrões Rest ou GraphQL.",
+      "Faço aplicações Desktops com ElectronJS.",
+      "Faço apps para Android utilizando o React Native.",
+    ],
+  },
+  {
+    title: "Service Desk",
+    company_name: "Callink",
+    icon: nodejs,
+    iconBg: "#383E56",
+    date: "Junho 2014 - Julho 2018",
+    points: [
+      "Atendimento via ramal, chat, Hangouts e Telegram",
+      "Resolução remota de incidentes em sistemas operacionais Windows 7 e Windows 10",
+      "Atividades no Active Directory (Movimentação de objetos nas OUs, Desabilitar, desbloquear, ativar, resetar, add grupo de e-mail, etc..)",
+      "Monitoramento de alarmes pelo sistema Zabbix, Backup e restore de arquivos na rede via Data Protector",
+      "Tratativa de incidentes em sistemas de clientes",
+      "Criação de scripts para automação, desenvolvimento de chat bot com Telegraf e NodeJS",
+    ],
+  },
+  {
+    title: "Sócio proprietario",
+    company_name: "Mercado Novo Dia",
+    icon: shopify,
+    iconBg: "#E6DEDD",
+    date: "Janeiro 2006 - Março 2012",
+    points: [
+      "Serviços bancários",
+      "Compras de produtos",
+      "Operador de caixa, estoquista, repositor e entregador",
     ],
   },
 ];
@@ -185,30 +152,29 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Eu pensei que era impossível fazer um site tão bonito quanto o nosso produto, mas o Vulks provou que eu estava errado.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "API para rede social, com upload de imagens, comentários, likes/dislikes, followers e autenticação JWT. Nesse projeto utilizo o banco Mysql.",
+    name: "API REST",
+    designation: "Node.js",
+    company: "Express, Mysql, JWT",
+    source_code_link: "https://github.com/Vulquimar-Silva/server-itsocial"
   },
   {
     testimonial:
-      "Nunca conheci um desenvolvedor web que realmente se preocupasse com o sucesso de seus clientes como Vulks.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "CRUD simples para um projeto que irei desenvolver em NextJS/Typescript, nesse projeto utilizo Express, PostgreSQL e Docker/Kubernetes.",
+    name: "CRUD",
+    designation: "Node.js",
+    company: "Express, PostgreSQL, Docker, Kubernetes",
+    source_code_link: "https://github.com/Vulquimar-Silva/backend-crudzera"
   },
   {
     testimonial:
-      "Depois que o Vulks otimizou nosso site, nosso tráfego aumentou 50%. Não podemos agradecê-los o suficiente!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "API GraphQL com modelagem de dados no Sequelize/MySQL e otimização de consultas ao banco com Data Loaders e AST.",
+    name: "API GraphQL",
+    designation: "Node.js",
+    company: "Typescript, Express, GraphQL, JWT, Sequelize",
+    source_code_link: "https://github.com/Vulquimar-Silva/api-node-graphql"
   },
 ];
-
 const projects = [
   {
     name: "IT.Social",
