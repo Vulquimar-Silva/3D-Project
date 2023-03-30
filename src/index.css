@@ -126,6 +126,11 @@
   transform: translateZ(0);
 }
 
+/* ignore-mouse events */
+.mouse-events {
+  pointer-events: none !important;
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {

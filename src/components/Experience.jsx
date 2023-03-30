@@ -61,7 +61,7 @@ const Experience = () => {
           O que fiz até agora
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-        Experiência de trabalho.
+          Experiências profissionais.
         </h2>
       </motion.div>
 
@@ -79,4 +79,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "Projetos");
+export default SectionWrapper(Experience, "Experiências");

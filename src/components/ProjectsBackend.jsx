@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 
 import { github } from "../assets";
-import { testimonials } from "../constants";
+import { backends } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -62,7 +62,7 @@ const ProjectsBackend = () => {
         </motion.div>
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
-        {testimonials.map((testimonial, index) => (
+        {backends.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}
       </div>

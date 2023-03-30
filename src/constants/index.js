@@ -1,9 +1,13 @@
-import { aws, backend, carrent, creator, css, docker, electron, figma, git, html, itsocial, javascript, jobit, kubernetes, meta, mobile, mongodb, nodejs, nubank, reactjs, reactnative, redux, shopify, spiderman, starbucks, tailwind, tesla, threejs, tripguide, typescript, vulksAutomation, vulksfy, web } from "../assets";
+import { aws, backend, carrent, creator, css, docker, electron, figma, git, html, itsocial, javascript, jobit, kubernetes, meta, mobile, mongodb, mysql, nodejs, nubank, reactjs, reactnative, redux, shopify, spiderman, starbucks, tailwind, tesla, threejs, tripguide, typescript, vulksAutomation, vulksfy, web } from "../assets";
 
 export const navLinks = [
   {
     id: "Sobre",
     title: "Sobre",
+  },
+  {
+    id: "Experiências",
+    title: "Experiências",
   },
   {
     id: "Projetos",
@@ -36,11 +40,11 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "HTML5",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "CSS3",
     icon: css,
   },
   {
@@ -52,15 +56,19 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: "ReactJS",
     icon: reactjs,
   },
   {
-    name: "Tailwind CSS",
+    name: "TailwindCSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: "Figma",
+    icon: figma,
+  },
+  {
+    name: "NodeJS",
     icon: nodejs,
   },
   {
@@ -68,27 +76,19 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "electron",
+    name: "ElectronJS",
     icon: electron,
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker,
   },
   {
-    name: "kubernetes",
+    name: "Kubernetes",
     icon: kubernetes,
   },
   {
-    name: "aws",
+    name: "AWS",
     icon: aws,
   }
 ];
@@ -149,7 +149,7 @@ const experiences = [
   },
 ];
 
-const testimonials = [
+const backends = [
   {
     testimonial:
       "API para rede social, com upload de imagens, comentários, likes/dislikes, followers e autenticação JWT. Nesse projeto utilizo o banco Mysql.",
@@ -179,7 +179,7 @@ const projects = [
   {
     name: "IT.Social",
     description:
-      "Uma rede social somente para quem é da área de TI, seja empresas ou pessoas.",
+      "Uma rede social somente para TI, os créditos ao template vai parao canal Lama Dev.",
     tags: [
       {
         name: "react",
@@ -295,4 +295,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, backends, projects };
