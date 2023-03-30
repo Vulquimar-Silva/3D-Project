@@ -7,7 +7,7 @@ import Experience from './Experience';
 import Home from './Home';
 import Navbar from './Navbar';
 import Tech from './Tech';
-import Projetos from './Projetos';
+import Projetos from './Projects';
 
 export {
   Home,

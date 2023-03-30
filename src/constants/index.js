@@ -1,4 +1,4 @@
-import { aws, backend, carrent, creator, css, docker, electron, figma, git, html, itsocial, javascript, jobit, kubernetes, meta, mobile, mongodb, mysql, nodejs, nubank, reactjs, reactnative, redux, shopify, spiderman, starbucks, tailwind, tesla, threejs, tripguide, typescript, vulksAutomation, vulksfy, web } from "../assets";
+import { aws, css, docker, electron, figma, git, html, itsocial, javascript, kubernetes, mongodb, mysql, nodejs, nubank, reactjs, reactnative, redux, shopify, spiderman, tailwind, threejs, typescript, vulksAutomation, vulksfy } from "../assets";
 
 export const navLinks = [
   {
