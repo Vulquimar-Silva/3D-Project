@@ -1,13 +1,21 @@
+import { useEffect, useState } from "react"
 import { BrowserRouter } from "react-router-dom";
-import { useState, useEffect } from "react"
 
 import { About, Contact, Experience, Home, Navbar, ProjectsBackend, Projetos, StarsCanvas, Tech } from "./components";
 import { ScrollTop } from "./components/ScrollTop"
+import SvgIntro from './svg'
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
+
+    const timer = setTimeout(() => {
+      setShowSplash(false);
+      document.body.style.overflow = "visible";
+    }, 13000);
+
     // Adiciona um ouvinte para alterações no tamanho da tela
     const mediaQuery = window.matchMedia("(max-width: 500px)");
 
@@ -25,13 +33,17 @@ const App = () => {
     // Remove o ouvinte quando o componente for desmontado
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      clearTimeout(timer);
     };
   }, []);
 
   return (
     <BrowserRouter>
+    {showSplash ? (
+    <SvgIntro />
+    ): (
       <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center opacity-85">
+        <div className="opacity-80 bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Home />
         </div>
@@ -46,6 +58,7 @@ const App = () => {
         </div>
         <ScrollTop />
       </div>
+      )}
     </BrowserRouter>
   )
 }

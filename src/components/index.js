@@ -1,7 +1,7 @@
 import ProjectsBackend from './ProjectsBackend';
 
 import About from './About';
-import { BallCanvas, ComputersCanvas, EarthCanvas, StarsCanvas } from './canvas';
+import { BallCanvas, HomeCanvas, EarthCanvas, StarsCanvas, MoonCanvas } from './canvas';
 import Contact from './Contact';
 import Experience from './Experience';
 import Home from './Home';
@@ -12,6 +12,7 @@ import Projetos from './Projects';
 export {
   Home,
   Navbar,
+  MoonCanvas,
   About,
   Tech,
   Experience,
@@ -20,6 +21,6 @@ export {
   Contact,
   EarthCanvas,
   BallCanvas,
-  ComputersCanvas,
+  HomeCanvas,
   StarsCanvas
 }

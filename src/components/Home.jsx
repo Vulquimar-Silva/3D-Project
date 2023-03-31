@@ -1,28 +1,65 @@
 import { motion } from 'framer-motion';
+import {useState, useEffect} from 'react'
 
 import { styles } from '../styles'
-import { ComputersCanvas } from './canvas';
+import { HomeCanvas, MoonCanvas } from './canvas';
 
 const Home = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Adiciona um ouvinte para alterações no tamanho da tela
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+    // Define o valor inicial da variável de estado `isMobile`
+    setIsMobile(mediaQuery.matches);
+
+    // Defina uma função de retorno de chamada para lidar com alterações na media query
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    // Adiciona a função de retorno de chamada como um ouvinte para alterações no media query
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Remove o ouvinte quando o componente for desmontado
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
   return (
     <section className='relative w-full h-screen mx-auto'>
-      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7x1 mx-auto flex flex-row items-start gap-5`}>
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915eff]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
+      <div className={`${styles.paddingX} absolute inset-0 top-[110px] max-w-7x1 mx-auto flex flex-row items-start gap-5`}>
 
-        <div className='w-full mouse-events'>
-          <h1 className={`${styles.homeHeadText} opacity-80`}>
-            Hi, viajantes
-          </h1>
-          <h1 className='text-[#915eff] font-black lg:text-[80px] w-full sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-1 opacity-85'>bem vindos</h1>
-          <h1 className='font-black text-white lg:text-[75px] w-full sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-1 opacity-90'>ao meu portfólio</h1>
+        <div className='absolute mouse-events'>
+          {!isMobile ? (
+            <div>
+              <h1 className={`${styles.homeHeadText} opacity-80`}>
+                  Hi, terráqueos
+                </h1>
+                <h1 className='text-[#915eff] font-black lg:text-[70px] w-full sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-90'>bem vindos</h1>        
+                <h1 className='relative font-black lg:text-[70px] w-full sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-80'>
+                ao meu &nbsp; portfólio
+              </h1>
+            </div>
+          ) : (
+          <div>
+            <h1 className={`${styles.homeMobileText} opacity-80`}>
+              Hi, terráqueos
+            </h1>
+            <h1 className='opacity-0'>bem vindos</h1>        
+            <h1 className='opacity-0'>
+              ao meu&nbsp; portfólio 
+            </h1>
+          </div>
+          )
+        }
         </div>
+        <MoonCanvas />
       </div>
-      <ComputersCanvas />
+      <HomeCanvas />
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      <div className='absolute xs:bottom-12 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div

@@ -1,4 +1,4 @@
-import { aws, css, docker, electron, figma, git, html, itsocial, javascript, kubernetes, mongodb, mysql, nodejs, nubank, reactjs, reactnative, redux, shopify, spiderman, tailwind, threejs, typescript, vulksAutomation, vulksfy } from "../assets";
+import { aws, css, docker, electron, figma, git, html, itsocial, javascript, kubernetes, mongodb, mysql, nodejs, nubank, reactjs, reactnative, redux, sass, shopify, spiderman, tailwind, threejs, typescript, vulksAutomation, vulksfy } from "../assets";
 
 export const navLinks = [
   {
@@ -44,8 +44,12 @@ const technologies = [
     icon: html,
   },
   {
-    name: "CSS3",
-    icon: css,
+    name: "CSS3/SASS",
+    icon: sass,
+  },
+  {
+    name: "TailwindCSS",
+    icon: tailwind,
   },
   {
     name: "JavaScript",
@@ -56,12 +60,8 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "ReactJS",
+    name: "ReactJS/NextJS",
     icon: reactjs,
-  },
-  {
-    name: "TailwindCSS",
-    icon: tailwind,
   },
   {
     name: "Figma",
@@ -74,10 +74,6 @@ const technologies = [
   {
     name: "MongoDB",
     icon: mongodb,
-  },
-  {
-    name: "ElectronJS",
-    icon: electron,
   },
   {
     name: "Docker",
