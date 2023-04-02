@@ -14,7 +14,7 @@ const App = () => {
     const timer = setTimeout(() => {
       setShowSplash(false);
       document.body.style.overflow = "visible";
-    }, 13000);
+    }, 13500);
 
     // Adiciona um ouvinte para alterações no tamanho da tela
     const mediaQuery = window.matchMedia("(max-width: 500px)");
@@ -39,25 +39,25 @@ const App = () => {
 
   return (
     <BrowserRouter>
-    {showSplash ? (
-    <SvgIntro />
-    ): (
-      <div className="relative z-0 bg-primary">
-        <div className="opacity-80 bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Home />
+      {showSplash ? (
+        <SvgIntro />
+      ) : (
+        <div className="relative z-0 bg-primary">
+          <div className="opacity-80 bg-cover bg-no-repeat bg-center">
+            <Navbar />
+            <Home />
+          </div>
+          <About />
+          <Experience />
+          {isMobile ? null : <Tech />}
+          <Projetos />
+          <ProjectsBackend />
+          <div className="relative z-0">
+            <Contact />
+            <StarsCanvas />
+          </div>
+          <ScrollTop />
         </div>
-        <About />
-        <Experience />
-        {isMobile ? null : <Tech />}
-        <Projetos />
-        <ProjectsBackend />
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
-        </div>
-        <ScrollTop />
-      </div>
       )}
     </BrowserRouter>
   )

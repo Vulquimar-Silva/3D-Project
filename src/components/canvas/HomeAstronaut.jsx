@@ -91,7 +91,7 @@ const HomeCanvas = () => {
         gl={{ preserveDrawingBuffer: false }}
       >
         <Suspense fallback={<CanvasLoader />}>
-          <OrbitControls
+          <OrbitControls 
             enableZoom={false}
             maxPolarAngle={Math.PI / 1}
             minPolarAngle={Math.PI / 2}

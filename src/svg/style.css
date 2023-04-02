@@ -12,11 +12,11 @@
 }
 
 #vulks-v {
-  animation: vulks-text 7s ease 0s forwards;
+  animation: vulks-text 5s ease 0s forwards;
 }
 
 #vulks-s {
-  animation: vulks-text 7s ease 0s forwards;
+  animation: vulks-text 5s ease 0s forwards;
 }
 
 @keyframes vulks-text {
@@ -55,7 +55,7 @@
 }
 #vulks-logo {
   opacity: 0;
-  animation: vulks-logo 7s ease 7s forwards;
+  animation: vulks-logo 5s ease 5s forwards;
 }
 
 @keyframes vulks-logo {
@@ -86,7 +86,7 @@
 }
 svg {
   filter: drop-shadow(0px, 0px, 0px rgba(247, 247, 247, 0)) drop-shadow(0px, 0px, 0px rgba(0, 0, 0, 0));
-  animation: vulks-shadow 12s ease 0s forwards;
+  animation: vulks-shadow 10s ease 0s forwards;
 }
 
 @keyframes vulks-shadow {

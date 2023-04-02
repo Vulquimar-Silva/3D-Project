@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
 import { styles } from '../styles'
 import { HomeCanvas, MoonCanvas } from './canvas';
@@ -27,36 +27,38 @@ const Home = () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
+  
   return (
     <section className='relative w-full h-screen mx-auto'>
-      <div className={`${styles.paddingX} absolute inset-0 top-[110px] max-w-7x1 mx-auto flex flex-row items-start gap-5`}>
+      <div className={`${styles.paddingX} absolute inset-0 top-[110px] max-w-7x1 mx-auto flex flex-row items-start gap-5 moonEffectGsap`}>
 
         <div className='absolute mouse-events'>
           {!isMobile ? (
             <div>
-              <h1 className={`${styles.homeHeadText} opacity-80`}>
-                  Hi, terráqueos
-                </h1>
-                <h1 className='text-[#915eff] font-black lg:text-[70px] w-full sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-90'>bem vindos</h1>        
-                <h1 className='relative font-black lg:text-[70px] w-full sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-80'>
-                ao meu &nbsp; portfólio
+              <h1 className={`${styles.homeHeadText} opacity-80 textHomeEffectGsap-1`}>
+                Hi, terráqueos
+              </h1>
+              <h1 className='text-[#915eff] font-black lg:text-[60px] w-full sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-80 textHomeEffectGsap-2'>bem vindos</h1>
+              <h1 className='relative font-black lg:text-[60px] w-full sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-80 textHomeEffectGsap-3'>
+                ao meu &nbsp;portfólio
               </h1>
             </div>
           ) : (
-          <div>
-            <h1 className={`${styles.homeMobileText} opacity-80`}>
-              Hi, terráqueos
-            </h1>
-            <h1 className='opacity-0'>bem vindos</h1>        
-            <h1 className='opacity-0'>
-              ao meu&nbsp; portfólio 
-            </h1>
-          </div>
+            <div>
+              <h1 className={`${styles.homeMobileText} opacity-80 textHomeEffectGsap-1`}>
+                Hi, terráqueos
+              </h1>
+              <h1 className='text-[#915eff] font-black lg:text-[50px] w-full sm:text-[50px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-90 textHomeEffectGsap-2'>bem vindos</h1>
+              <h1 className='relative font-black lg:text-[50px] w-full sm:text-[50px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-80 textHomeEffectGsap-3'>
+                ao meu portfólio
+              </h1>
+            </div>
           )
-        }
+          }
         </div>
         <MoonCanvas />
       </div>
+
       <HomeCanvas />
 
       <div className='absolute xs:bottom-12 w-full flex justify-center items-center'>

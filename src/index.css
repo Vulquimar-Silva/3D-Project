@@ -130,6 +130,19 @@ body {
   transform: translateZ(0);
 }
 
+#canvasEffect {
+  position: absolute;
+  width: 100%;
+  margin: -200px;
+  border: none;
+  opacity: 0.60;
+  z-index: 1;
+}
+
+.fixImgText {
+  display: inline-block;
+}
+
 /* ignore-mouse events */
 .mouse-events {
   pointer-events: none !important;

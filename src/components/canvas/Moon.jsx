@@ -30,7 +30,7 @@ const Moon = () => {
     <mesh>
       <hemisphereLight intensity={0.01} groundColor='black' />
       <spotLight
-        position={[-150, -20, -50]}
+        position={[-100, -20, -50]}
         angle={0.12}
         penumbra={1}
         intensity={1}
