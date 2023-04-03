@@ -97,7 +97,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "Fevereiro 2020 - Janeiro 2023",
     points: [
-      "Desenvolvimento de aplicações WEB com Angular 9, ReactJS e NodeJS.",
+      "Desenvolvimento de aplicações WEB com Angular 9, ReactJS.",
       "Desenvolvimento de aplicações desktop com ElectronJS, NextJS, Tailwind, NodeJS e AWS.",
       "Deploy do client em ambiente operacional com Powershell.",
       "Desenvolvimento de scripts e chat bot para instalações remota no service desk.",
@@ -175,7 +175,7 @@ const projects = [
   {
     name: "IT.Social",
     description:
-      "Uma rede social somente para TI, os créditos ao template vai parao canal Lama Dev.",
+      "Uma rede social somente para TI, os créditos ao template vai para o canal Lama Dev.",
     tags: [
       {
         name: "react",

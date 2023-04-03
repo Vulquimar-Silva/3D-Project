@@ -1,12 +1,11 @@
-import { useState, useRef, Suspense } from "react";
+import { PointMaterial, Points, Preload } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Points, PointMaterial, Preload } from "@react-three/drei";
-
 import { inSphere } from "maath/random";
+import { Suspense, useRef, useState } from "react";
 
 const Stars = (props) => {
   const ref = useRef();
-  const myBuffer = new Float32Array(4000 * 3);
+  const myBuffer = new Float32Array(2500 * 3);
   const [sphere] = useState(() => inSphere(myBuffer, { radius: 1.2 }));
 
   useFrame((state, delta) => {

@@ -49,7 +49,7 @@ const App = () => {
           </div>
           <About />
           <Experience />
-          {isMobile ? null : <Tech />}
+          {/* {isMobile ? null : <Tech />} */}
           <Projetos />
           <ProjectsBackend />
           <div className="relative z-0">

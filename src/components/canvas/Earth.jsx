@@ -1,14 +1,34 @@
-import React, { Suspense } from "react";
+import { OrbitControls, Preload, useAnimations, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import React, { Suspense, useEffect } from "react";
 
 import CanvasLoader from "../Loader";
 
 const Earth = () => {
-  const { scene } = useGLTF("./planet/scene.gltf");
-
+  const {  scene, animations  } = useGLTF("./heavy_firefly/scene.gltf");
+  const { ref, names, actions } = useAnimations(animations);
+  
+  useEffect(() => {
+    actions[names[0]].reset().fadeIn(1).play()
+  })
   return (
-    <primitive object={scene} scale={2.5} position-y={0} rotation-y={0} />
+    <mesh ref={ref}>
+      <hemisphereLight color='white' intensity={-1.20} groundColor='white' />
+      <spotLight
+        angle={0.90}
+        penumbra={1}
+        intensity={1}
+        castShadow
+        shadow-mapSize={1024}
+      />
+      <pointLight intensity={1} />
+    <primitive 
+      object={scene} 
+      scale={7.8}
+      position={[-20, -90.55, -900.5]}
+      rotation={[0.9, 1, 0]}
+    />
+    </mesh>
   );
 };
 
@@ -16,25 +36,13 @@ const EarthCanvas = () => {
   return (
     <Canvas
       className="mouse-events"
-      shadows
+      shadows='soft'
+      color="blue"
       frameloop='always'
-      gl={{ preserveDrawingBuffer: true }}
-      camera={{
-        fov: 48,
-        near: 0.1,
-        far: 200,
-        position: [-4, 3, 6],
-      }}
+      gl={{ preserveDrawingBuffer: false }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          autoRotate
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
         <Earth />
-
         <Preload all />
       </Suspense>
     </Canvas>
