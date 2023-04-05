@@ -4,7 +4,7 @@ import React, { Suspense, useEffect } from "react";
 
 import CanvasLoader from "../Loader";
 
-const Earth = () => {
+const HeavyFirefly = () => {
   const {  scene, animations  } = useGLTF("./heavy_firefly/scene.gltf");
   const { ref, names, actions } = useAnimations(animations);
   
@@ -32,7 +32,7 @@ const Earth = () => {
   );
 };
 
-const EarthCanvas = () => {
+const HeavyFireflyCanvas = () => {
   return (
     <Canvas
       className="mouse-events"
@@ -42,11 +42,11 @@ const EarthCanvas = () => {
       gl={{ preserveDrawingBuffer: false }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <Earth />
+        <HeavyFirefly />
         <Preload all />
       </Suspense>
     </Canvas>
   );
 };
 
-export default EarthCanvas;
+export default HeavyFireflyCanvas;

@@ -5,21 +5,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#050816",
-        secondary: "#aaa6c3",
-        tertiary: "#151030",
-        "black-100": "#100d25",
-        "black-200": "#090325",
-        "white-100": "#f3f3f3",
+        primary: "#000000",
+        secondary: "#bebdc6",
+        tertiary: "#202949b4",
+        "black-100": "#111527",
+        "black-200": "#22294d",
+        "white-100": "#ececec",
       },
       boxShadow: {
-        card: "0px 35px 120px -15px #211e35",
+        card: "0px 35px 120px -15px #29796d",
       },
       screens: {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/back.jpeg')",
+        "hero-pattern": 'linear-gradient(180deg, #000000 0, #111520 30%, #21212e 50%, #0e1221 75%, #000000 100%)',
       },
     },
   },

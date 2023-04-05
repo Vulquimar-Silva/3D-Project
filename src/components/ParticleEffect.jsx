@@ -1,6 +1,6 @@
 import React, { Suspense, useLayoutEffect } from 'react';
 
-import vulksImg from '../assets/vulksFoto.png'
+import vulksImg from '../assets/vulksFotoColor.png';
 
 const CanvasEffectParticles = () => {
 
@@ -29,7 +29,7 @@ const CanvasEffectParticles = () => {
                     this.force = 0;
                     this.angle = 0;
                     this.distance = 0;
-                    this.friction = 0.95;
+                    this.friction = 0.90;
                     this.ease = 0.2;
 
                     this.update = function () {
@@ -58,7 +58,7 @@ const CanvasEffectParticles = () => {
                     this.width = width;
                     this.height = height;
                     this.image = myImage;
-                    this.centerX = this.width / 2.2;
+                    this.centerX = this.width / 2;
                     this.centerY = this.height / 2;
                     this.x = this.centerX - this.image.width / 1;
                     this.y = this.centerY - this.image.height / 2;

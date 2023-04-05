@@ -132,10 +132,12 @@ body {
 
 #canvasEffect {
   position: absolute;
-  width: 220%;
-  margin: -100px -30px;
-  border: none;
+  width: 350%;
+  margin-top: 1px;
+  margin-left: -150px;
   opacity: 0.50;
+  background-repeat: no-repeat;
+  object-fit: cover;
   z-index: 1;
 }
 

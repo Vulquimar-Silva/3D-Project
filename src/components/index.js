@@ -1,13 +1,12 @@
-import ProjectsBackend from './ProjectsBackend';
-
 import About from './About';
-import { BallCanvas, HomeCanvas, EarthCanvas, StarsCanvas, MoonCanvas } from './canvas';
+import { HeavyFireflyCanvas, HomeCanvas, MoonCanvas, StarsCanvas } from './canvas';
 import Contact from './Contact';
 import Experience from './Experience';
 import Home from './Home';
 import Navbar from './Navbar';
-import Tech from './Tech';
 import Projetos from './Projects';
+import ProjectsBackend from './ProjectsBackend';
+import Tech from './Tech';
 
 export {
   Home,
@@ -19,8 +18,7 @@ export {
   Projetos,
   ProjectsBackend,
   Contact,
-  EarthCanvas,
-  BallCanvas,
+  HeavyFireflyCanvas,
   HomeCanvas,
   StarsCanvas
 }

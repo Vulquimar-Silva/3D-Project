@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 import { styles } from '../styles'
 import { HomeCanvas, MoonCanvas } from './canvas';
@@ -30,28 +30,33 @@ const Home = () => {
   
   return (
     <section className='relative w-full h-screen mx-auto'>
-      <div className={`${styles.paddingX} absolute inset-0 top-[110px] max-w-7x1 mx-auto flex flex-row items-start gap-5 moonEffectGsap`}>
+      <div className={`${styles.paddingX} absolute inset-0 top-[140px] max-w-7x1 mx-auto flex flex-row items-start gap-5 moonEffectGsap`}>
 
         <div className='absolute mouse-events'>
           {!isMobile ? (
             <div>
-              <h1 className={`${styles.homeHeadText} opacity-80 textHomeEffectGsap-1`}>
-                Hi, terráqueos
+              <h1 className={`${styles.homeHeadText}  text-[#e6e1e1] opacity-80 textHomeEffectGsap-1`}>
+                Olá, terráqueo
               </h1>
-              <h1 className='text-[#915eff] font-black lg:text-[60px] w-full sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-80 textHomeEffectGsap-2'>bem vindos</h1>
-              <h1 className='relative font-black lg:text-[60px] w-full sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-80 textHomeEffectGsap-3'>
-                ao meu &nbsp;portfólio
+              <h1 className='text-[#e6e1e1] font-black lg:text-[60px] w-full sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-80 textHomeEffectGsap-2'>
+              seja bem vindo
+              </h1>
+              <h1 className='relative font-black text-[#e6e1e1] lg:text-[60px] w-full sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-80 textHomeEffectGsap-3'>
+                ao &nbsp;portfólio 3D
               </h1>
             </div>
           ) : (
             <div>
-              <h1 className={`${styles.homeMobileText} opacity-80 textHomeEffectGsap-1`}>
-                Hi, terráqueos
+              <h1 className={`${styles.homeMobileText} text-[#e6e1e1] opacity-80 textHomeEffectGsap-1`}>
+                Olá, terráqueo
               </h1>
-              <h1 className='text-[#915eff] font-black lg:text-[50px] w-full sm:text-[50px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-90 textHomeEffectGsap-2'>bem vindos</h1>
-              <h1 className='relative font-black lg:text-[50px] w-full sm:text-[50px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-80 textHomeEffectGsap-3'>
-                ao meu portfólio
+              <h1 className='text-[#e6e1e1] font-black lg:text-[40px] w-full sm:text-[50px] xs:text-[40px] text-[40px] lg:leading-[-10px] mt-1 opacity-80 textHomeEffectGsap-2'>
+               seja bem vindo
               </h1>
+              <h1 className='text-[#e6e1e1] font-black lg:text-[40px] w-full sm:text-[50px] xs:text-[40px] text-[40px] lg:leading-[-10px] mt-1 opacity-80 textHomeEffectGsap-3'>
+              ao &nbsp;portfólio 3D
+              </h1>
+
             </div>
           )
           }

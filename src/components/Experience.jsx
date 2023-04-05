@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 
 import { experiences } from "../constants";
@@ -11,13 +10,14 @@ import "react-vertical-timeline-component/style.min.css";
 
 const ExperienceCard = ({ experience }) => {
   return (
+    
     <VerticalTimelineElement 
     visible
       contentStyle={{
-        background: "#1d1836",
+        background: "#1c203a",
         color: "#fff",
       }}
-      contentArrowStyle={{ borderRight: "8px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
