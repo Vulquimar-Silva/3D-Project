@@ -10,9 +10,9 @@ import "react-vertical-timeline-component/style.min.css";
 
 const ExperienceCard = ({ experience }) => {
   return (
-    
-    <VerticalTimelineElement 
-    visible
+
+    <VerticalTimelineElement
+      visible
       contentStyle={{
         background: "#1c203a",
         color: "#fff",

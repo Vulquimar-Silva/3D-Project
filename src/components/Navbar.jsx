@@ -11,47 +11,47 @@ const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
 
-      useEffect(() => {
+  useEffect(() => {
 
-        const tl = gsap.timeline();
+    const tl = gsap.timeline();
 
-          tl.fromTo(
-            '.logoEffectGsap',
-            { y: -50, opacity: 0}, 
-            { y: 0, opacity: 1},
-            { delay: 0.7, ease: 'expo.inOut'}, '-=0.5')    
-          
-          .fromTo(
-            '.menuEffectGsap',
-            { y: -50, opacity: 0}, 
-            { y: 0, opacity: 1},
-            { delay: 0.7, ease: 'expo.inOut'}, '-=0.5')
+    tl.fromTo(
+      '.logoEffectGsap',
+      { y: -50, opacity: 0 },
+      { y: 0, opacity: 1 },
+      { delay: 0.7, ease: 'expo.inOut' }, '-=0.5')
 
-          .fromTo(
-            '.textHomeEffectGsap-1',
-            { y: -50, opacity: 0}, 
-            { y: 0, opacity: 1},
-            { delay: 0.7, ease: 'expo.inOut'}, '-=0.5')
+      .fromTo(
+        '.menuEffectGsap',
+        { y: -50, opacity: 0 },
+        { y: 0, opacity: 1 },
+        { delay: 0.7, ease: 'expo.inOut' }, '-=0.5')
 
-          .fromTo(
-            '.textHomeEffectGsap-2',
-            { y: -50, opacity: 0}, 
-            { y: 0, opacity: 1},
-            { delay: 0.7, ease: 'expo.inOut'}, '-=0.5')
+      .fromTo(
+        '.textHomeEffectGsap-1',
+        { y: -50, opacity: 0 },
+        { y: 0, opacity: 1 },
+        { delay: 0.7, ease: 'expo.inOut' }, '-=0.5')
 
-          .fromTo(
-            '.textHomeEffectGsap-3',
-            { y: -50, opacity: 0}, 
-            { y: 0, opacity: 1},
-            { delay: 0.7, ease: 'expo.inOut'}, '-=0.5')
+      .fromTo(
+        '.textHomeEffectGsap-2',
+        { y: -50, opacity: 0 },
+        { y: 0, opacity: 1 },
+        { delay: 0.7, ease: 'expo.inOut' }, '-=0.5')
 
-          .fromTo(
-            '.moonEffectGsap',
-            { y: -50, opacity: 0}, 
-            { y: 0, opacity: 1},
-            { delay: 0.7, ease: 'expo.inOut'}, '-=0.5')
+      .fromTo(
+        '.textHomeEffectGsap-3',
+        { y: -50, opacity: 0 },
+        { y: 0, opacity: 1 },
+        { delay: 0.7, ease: 'expo.inOut' }, '-=0.5')
+
+      .fromTo(
+        '.moonEffectGsap',
+        { y: -50, opacity: 0 },
+        { y: 0, opacity: 1 },
+        { delay: 0.7, ease: 'expo.inOut' }, '-=0.5')
   }, [])
-  
+
 
   return (
     <nav

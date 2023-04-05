@@ -27,7 +27,7 @@ const Home = () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
-  
+
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[140px] max-w-7x1 mx-auto flex flex-row items-start gap-5 moonEffectGsap`}>
@@ -39,7 +39,7 @@ const Home = () => {
                 Olá, terráqueo
               </h1>
               <h1 className='text-[#e6e1e1] font-black lg:text-[60px] w-full sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-80 textHomeEffectGsap-2'>
-              seja bem vindo
+                seja bem vindo
               </h1>
               <h1 className='relative font-black text-[#e6e1e1] lg:text-[60px] w-full sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[-10px] mt-1 opacity-80 textHomeEffectGsap-3'>
                 ao &nbsp;portfólio 3D
@@ -51,10 +51,10 @@ const Home = () => {
                 Olá, terráqueo
               </h1>
               <h1 className='text-[#e6e1e1] font-black lg:text-[40px] w-full sm:text-[50px] xs:text-[40px] text-[40px] lg:leading-[-10px] mt-1 opacity-80 textHomeEffectGsap-2'>
-               seja bem vindo
+                seja bem vindo
               </h1>
               <h1 className='text-[#e6e1e1] font-black lg:text-[40px] w-full sm:text-[50px] xs:text-[40px] text-[40px] lg:leading-[-10px] mt-1 opacity-80 textHomeEffectGsap-3'>
-              ao &nbsp;portfólio 3D
+                ao &nbsp;portfólio 3D
               </h1>
 
             </div>
