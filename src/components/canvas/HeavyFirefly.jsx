@@ -5,7 +5,7 @@ import React, { Suspense, useEffect } from "react";
 import CanvasLoader from "../Loader";
 
 const HeavyFirefly = () => {
-  const {  scene, animations  } = useGLTF("./heavy_firefly/scene.gltf");
+  const {  scene, animations  } = useGLTF("./heavy_firefly/nave.gltf");
   const { ref, names, actions } = useAnimations(animations);
   
   useEffect(() => {

@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Moon = () => {
-  const { scene } = useGLTF("./the_moon/scene.gltf");
+  const { scene } = useGLTF("./the_moon/moon.gltf");
 
   const [isMobile, setIsMobile] = useState(false);
 

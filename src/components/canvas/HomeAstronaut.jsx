@@ -5,7 +5,7 @@ import React, { Suspense, useEffect, useState } from "react";
 import CanvasLoader from "../Loader";
 
 const Home = () => {
-  const { scene, animations } = useGLTF("./cosmonaut_on_a_rocket/scene.gltf");
+  const { scene, animations } = useGLTF("./cosmonaut_on_a_rocket/astronaut.gltf");
   const { ref, names, actions } = useAnimations(animations)
   const [isMobile, setIsMobile] = useState(false);
 
