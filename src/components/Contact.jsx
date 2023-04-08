@@ -6,7 +6,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
-import { HeavyFireflyCanvas } from "./canvas";
+import { EarthCanvas } from "./canvas";
 
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -154,7 +154,7 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
-        <HeavyFireflyCanvas />
+        <EarthCanvas />
       </motion.div>
     </div>
   );

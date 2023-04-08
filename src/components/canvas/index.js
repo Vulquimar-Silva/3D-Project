@@ -1,6 +1,6 @@
-import HeavyFireflyCanvas from "./HeavyFirefly";
+import EarthCanvas from "./Earth";
 import HomeCanvas from "./HomeAstronaut";
 import MoonCanvas from "./Moon";
 import StarsCanvas from "./Stars";
 
-export { HeavyFireflyCanvas, MoonCanvas, HomeCanvas, StarsCanvas };
+export { EarthCanvas, MoonCanvas, HomeCanvas, StarsCanvas };
