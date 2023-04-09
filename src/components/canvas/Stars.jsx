@@ -5,21 +5,20 @@ import { Suspense, useRef, useState } from "react";
 
 const Stars = (props) => {
   const ref = useRef();
-  const myBuffer = new Float32Array(2500 * 3);
-  const [sphere] = useState(() => inSphere(myBuffer, { radius: 1.2 }));
+  const myBuffer = new Float32Array(1000 * 2);
+  const [sphere] = useState(() => inSphere(myBuffer, { radius: 5.9 }));
 
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta / 10;
-    ref.current.rotation.y -= delta / 15;
+    ref.current.rotation.x -= delta / 1;
+    ref.current.rotation.y -= delta / 10;
   });
 
   return (
-    <group rotation={[0, 0, Math.PI / 4]}>
+    <group rotation={[3, 1, Math.PI / 7]}>
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color='#f272c8'
-          size={0.002}
+          size={0.003}
           sizeAttenuation={true}
           depthWrite={false}
         />

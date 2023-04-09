@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Home, Navbar, ProjectsBackend, Projetos, StarsCanvas } from "./components";
+import { About, Contact, Experience, Home, Navbar, ProjectsBackend, StarsCanvas, Projetos } from "./components";
 import { ScrollTop } from "./components/ScrollTop"
 import SvgIntro from './svg'
 

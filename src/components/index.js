@@ -1,5 +1,5 @@
 import About from './About';
-import { EarthCanvas, HomeCanvas, MoonCanvas, StarsCanvas } from './canvas';
+import { PlaneCanvas, HomeCanvas, MoonCanvas, StarsCanvas } from './canvas';
 import Contact from './Contact';
 import Experience from './Experience';
 import Home from './Home';
@@ -18,7 +18,7 @@ export {
   Projetos,
   ProjectsBackend,
   Contact,
-  EarthCanvas,
+  PlaneCanvas,
   HomeCanvas,
   StarsCanvas
 }
