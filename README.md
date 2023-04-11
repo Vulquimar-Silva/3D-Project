@@ -1,3 +1,5 @@
-# Web 3D com React JS | ThreeJS | Tailwind
+# Portfólio 3D 
 
-- Projeto em desenvolvimento
+- Tecnologias: React JS | ThreeJS | Tailwind
+
+![obs: ainda está em desenvolvimento](./public/project3D.png)

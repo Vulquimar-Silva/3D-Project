@@ -6,7 +6,7 @@ import CanvasLoader from "../Loader";
 
 const Plane = () => {
 
-  const { scene, animations } = useGLTF("./dae_stylized/scene.gltf");
+  const { scene, animations } = useGLTF("./dae_stylized/plane.gltf");
   const { ref, names, actions } = useAnimations(animations)
 
   
@@ -16,19 +16,14 @@ const Plane = () => {
   
   return (
     <mesh ref={ref}>
-      <hemisphereLight intensity={0.5} groundColor='black' />
+      <hemisphereLight intensity={-0.5} groundColor='white' />
       <spotLight
-        position={[-20, 50, 20]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
+        position={[-20, 50, 25]}
       />
       <pointLight intensity={1} />
       <primitive
         object={scene}
-        scale={25.90}
+        scale={21.90}
         position={[75.10, 9.5, -109.9]}
         rotation={[-5.98, 55.8, -5.8]}
       />
@@ -44,7 +39,7 @@ const PlaneCanvas = () => {
       shadows
       frameloop='always'
       dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
+      gl={{ preserveDrawingBuffer: false }}
       camera={{
         fov: 45,
         near: 0.1,

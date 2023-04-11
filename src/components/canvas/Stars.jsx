@@ -5,7 +5,7 @@ import { Suspense, useRef, useState } from "react";
 
 const Stars = (props) => {
   const ref = useRef();
-  const myBuffer = new Float32Array(1000 * 2);
+  const myBuffer = new Float32Array(500 * 2);
   const [sphere] = useState(() => inSphere(myBuffer, { radius: 5.9 }));
 
   useFrame((state, delta) => {
@@ -30,7 +30,7 @@ const Stars = (props) => {
 const StarsCanvas = () => {
   return (
     <div className='w-full h-auto absolute inset-0 z-[-1]'>
-      <Canvas camera={{ position: [0, 0, 1] }} className="mouse-events">
+      <Canvas camera={{ position: [0, 0, 1] }} className="mouse-events" gl={{ preserveDrawingBuffer: false }}>
         <Suspense fallback={null}>
           <Stars />
         </Suspense>
